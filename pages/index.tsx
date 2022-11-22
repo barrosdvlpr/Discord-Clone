@@ -1,9 +1,19 @@
 
 export default function Home() {
   return (
-    <div>
-      <div className="bg-gray-700 text-white min-h-screen flex items-center justify-center">
-        <div  className="max-w-lg py-10">
+    <div className="flex">
+      <div className="bg-gray-800 text-white min-h-screen p-4">
+        <div className="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center">TW</div>
+      </div>
+      <div className="bg-gray-700 text-white min-h-screen  w-60 flex flex-col"> 
+        <div className="shadow-md p-4">Tailwind CSS</div>
+        <div className="p-4 flex-1">Channels</div>
+      </div>
+      <div className="bg-gray-600 text-white min-h-screen  flex-1 items-center justify-center">
+        <div className="shadow-md p-4">General</div>
+
+        <div  className="max-w-lg p-4  flex flex-col ">
+          <p className="p-2">Messeges</p>
           <div className="flex hover:bg-gray-800 hover:bg-opacity-30 px-4 py-1">
             <img className="w-10 h-10 rounded-full mr-4" src="/dog.jfif"/>
             <div >
