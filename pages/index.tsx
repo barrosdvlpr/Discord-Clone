@@ -1,62 +1,25 @@
 
 export default function Home() {
   return (
-    <div className="flex">
-      <div className="bg-gray-800 text-white min-h-screen p-4">
-        <div className="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center">TW</div>
+    <div className="flex h-screen ">
+      <div className="bg-gray-800 text-white min-h-screen p-3 space-y-2 overflow-y-scroll min-w-min">
+        {[...Array(40)].map((_, i)=>(<div className="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center">{i}</div>))}        
       </div>
-      <div className="bg-gray-700 text-white min-h-screen  w-60 flex flex-col"> 
-        <div className="shadow-md p-4">Tailwind CSS</div>
-        <div className="p-4 flex-1">Channels</div>
+      <div className="bg-gray-700 text-white min-h-screen  w-60 flex flex-col min-w-min"> 
+        <div className="shadow-md px-3 h-12 flex items-center">Tailwind CSS</div>
+        <div className="p-3 flex-1 overflow-y-scroll space-y-2 ">
+          {[...Array(40)].map((_, i)=>(<p>Channels{i}</p>))}   
+        </div>
       </div>
-      <div className="bg-gray-600 text-white min-h-screen  flex-1 items-center justify-center">
-        <div className="shadow-md p-4">General</div>
-
-        <div  className="max-w-lg p-4  flex flex-col ">
-          <p className="p-2">Messeges</p>
-          <div className="flex hover:bg-gray-800 hover:bg-opacity-30 px-4 py-1">
-            <img className="w-10 h-10 rounded-full mr-4" src="/dog.jfif"/>
-            <div >
-              <p className="flex items-baseline">
-                <span className="text-green-500 mr-2 text-sm font-medium">Akita</span>
-                <span className="text-xs text-gray-500">21/11/2022</span>
-              </p>
-              <p className="text-gray-300">
-                Aenean bibendum malesuada bibendum. Vestibulum elementum tortor non urna suscipit, 
-                lacinia ullamcorper ex consectetur. Fusce ipsum mi, efficitur eu iaculis nec, 
-                iaculis at ipsum. Aenean ultricies ac turpis interdum feugiat. 
-              </p>
-            </div>
-          </div>
-          <div className="hover:bg-gray-800 hover:bg-opacity-30 px-4 py-0">
-            <p className="text-gray-300 pl-14 mt-2">
-              Praesent venenatis ac leo nec auctor. Maecenas mauris massa, venenatis vel lacinia ac, dictum et augue. Donec iaculis gravida est, quis facilisis lorem ultricies ut. Vestibulum eu condimentum libero, vel ullamcorper nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-            </p>
-          </div>
-          <div className="hover:bg-gray-800 hover:bg-opacity-30 px-4 py-0">
-            <p className="text-gray-300 pl-14 mt-2">
-              Pellentesque accumsan ex vel neque mattis, eget suscipit mi lobortis. Phasellus turpis est, suscipit sit amet finibus sed, suscipit a orci.
-            </p>
-          </div>
-       
-          <div className="flex hover:bg-gray-800 hover:bg-opacity-30 px-4 pt-1 mt-1">
-            <img className="w-10 h-10 rounded-full mr-4" src="/german-shepherd-sz6.jpg"/>
-            <div >
-              <p className="flex items-baseline">
-                <span className="text-green-500 mr-2 text-sm font-medium">German Shepherd</span>
-                <span className="text-xs text-gray-500">21/11/2022</span>
-              </p>
-              <p className="text-gray-300">
-                Aliquam justo magna, maximus ut condimentum rhoncus, tempus ut sapien. Aenean eleifend quam quis dignissim varius. Aenean eget tortor semper, congue metus sed, dapibus justo. Aenean fringilla dui ut dolor convallis semper. Nulla facilisi. Nam consectetur aliquet molestie.  
-              </p>
-
-            </div>
-          </div>
-          <div className="hover:bg-gray-800 hover:bg-opacity-30 px-4 py-0">
-            <p className="text-gray-300 pl-14 mt-2">
-              Phasellus turpis est, suscipit sit amet finibus sed, suscipit a orci.
-            </p>
-          </div>
+      <div className="bg-gray-600 text-white min-h-screen flex flex-col">
+        <div className="shadow-md px-3 h-12 flex items-center">General</div>
+        <div  className="max-w-xg p-3 space-y-4 overflow-y-scroll">
+          {[...Array(40)].map((_, i)=>(
+            <p>Message {i} 
+              Aenean bibendum malesuada bibendum. Vestibulum elementum tortor non urna suscipit, 
+              lacinia ullamcorper ex consectetur. Fusce ipsum mi, efficitur eu iaculis nec, 
+              iaculis at ipsum. Aenean ultricies ac turpis interdum feugiat.
+            </p>))}                              
         </div>
       </div>
     </div>
