@@ -11,7 +11,7 @@ export default function Home() {
           {[...Array(40)].map((_, i)=>(<div key={i}><p>Channels{i}</p></div>))}   
         </div>
       </div>
-      <div className="bg-gray-600 text-white min-h-screen flex flex-col">
+      <div className="bg-gray-600 text-gray-100 min-h-screen flex flex-col">
         <div className="shadow-md px-3 h-12 flex items-center p-4">General</div>
         <div  className="max-w-xg p-3 space-y-4 overflow-y-scroll">
           {[...Array(40)].map((_, i)=>(
