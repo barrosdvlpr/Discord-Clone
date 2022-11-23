@@ -6,7 +6,7 @@ export default function Home() {
     <div className="flex h-screen ">
       <div className="bg-gray-900 text-gray-100 min-h-screen p-3 space-y-2 overflow-y-scroll min-w-min">
 
-        <div className="bg-gray-700 text-gray-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-brand hover:text-white transition duration-200"><DiscordIcon className="w-7 h-5 "/></div>
+        <div className="bg-gray-700 text-gray-100 w-12 h-12 rounded-3xl hover:rounded-xl flex items-center justify-center hover:bg-brand hover:text-white transition-all duration-200"><DiscordIcon className="w-7 h-5 "/></div>
         {/* {[...Array(40)].map((_, i)=>(
           <div key={i} className="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center">{i}</div>
         ))}         */}
