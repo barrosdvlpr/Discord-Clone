@@ -37,7 +37,7 @@ export default function Home() {
   )
 }
 
-function DiscordIcon(props) {
+function DiscordIcon(props: any) {
   return (
     <svg aria-hidden="false" viewBox="0 0 28 20" {...props}>
       <path
