@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,7 +9,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colo0rs:{
+      fontFamily: {
+        sans: ["Whitney", "Open Sans", ...defaultTheme.fontFamily.sans],
+        title: ["Ginto", "Open Sans", ...defaultTheme.fontFamily.sans],
+      },
+      colors:{
         gray:{
           50: "#ECEDEE",
           100: "#DCDDDE",

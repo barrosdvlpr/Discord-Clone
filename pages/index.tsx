@@ -8,10 +8,10 @@ export default function Home() {
         {[...Array(40)].map((_, i)=>(<div key={i} className="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center">{i}</div>))}        
       </div>
       <div className="bg-gray-800 text-white min-h-screen  w-60 flex flex-col min-w-min"> 
-        <div className="shadow-md px-3 h-12 flex items-center text-gray-300">Tailwind CSS</div>
-        <div className="p-3 flex-1 overflow-y-scroll space-y-2 ">
-          <p className="text-white">Channels (unread)</p>
-          <p className="text-white">Channels (unread)</p>
+        <div className="shadow-md px-3 h-12 flex items-center font-title text-white">Tailwind CSS</div>
+        <div className="p-3 flex-1 overflow-y-scroll space-y-2 text-gray-300 font-medium">
+          <p className="text-white">channels (unread)</p>
+          <p className="text-white">channels (unread)</p>
           {[...Array(40)].map((_, i)=>(<div key={i}><p className="text-gray-200">Channels{i}</p></div>))}   
         </div>
       </div>
@@ -20,7 +20,7 @@ export default function Home() {
         <div  className="max-w-xg p-3 space-y-4 overflow-y-scroll">
           {[...Array(40)].map((_, i)=>(
             <div key={i}>
-              <p className="text-gray-200">Message {i} 
+              <p className="text-gray-100">Message {i} 
                 Aenean bibendum malesuada bibendum. Vestibulum elementum tortor non urna suscipit, 
                 lacinia ullamcorper ex consectetur. Fusce ipsum mi, efficitur eu iaculis nec, 
                 iaculis at ipsum. Aenean ultricies ac turpis interdum feugiat.
