@@ -1,32 +1,38 @@
-import { useRouter } from 'next/router'
+import { CheckIcon, ChevronIcon, VerifiedIcon } from "../../components/icons";
 
 export default function Server() {
-  const router = useRouter()
-
   return (
     <>
-      <div className="bg-gray-800 text-white min-h-screen  w-60 flex flex-col min-w-min"> 
-        <div className="shadow-md px-3 h-12 flex items-center font-title text-white">Server {router.query.sid}</div>
-        <div className="p-3 flex-1 overflow-y-scroll space-y-2 text-gray-300 font-medium">
-          <p className="text-white">channels (unread)</p>
-          <p className="text-white">channels (unread)</p>
-          {[...Array(40)].map((_, i)=>(<div key={i}><p className="text-gray-200">Channels{i}</p></div>))}   
+      <div className="flex flex-col bg-gray-800 w-60">
+        <button className="flex items-center h-12 px-4 font-semibold text-white shadow-sm font-title text-[15px] hover:bg-gray-550/[0.16] transition">
+          <div className="relative w-4 h-4 mr-1">
+            <VerifiedIcon className="absolute w-4 h-4 text-gray-550" />
+            <CheckIcon className="absolute w-4 h-4" />
+          </div>
+          Tailwind CSS
+          <ChevronIcon className="w-[18px] h-[18px] ml-auto opacity-80" />
+        </button>
+        <div className="flex-1 p-3 space-y-2 overflow-y-scroll font-medium text-gray-300 ">
+          <p className="text-white">general</p>
+          {[...Array(40)].map((_, i) => (
+            <p key={i}>channel {i}</p>
+          ))}
         </div>
       </div>
-      <div className="bg-gray-700 text-gray-100 min-h-screen flex flex-col">
-        <div className="shadow-md px-3 h-12 flex items-center p-4 text-gray-300">General</div>
-        <div  className="max-w-xg p-3 space-y-4 overflow-y-scroll">
-          {[...Array(40)].map((_, i)=>(
-            <div key={i}>
-              <p className="text-gray-100">Message {i} 
-                Aenean bibendum malesuada bibendum. Vestibulum elementum tortor non urna suscipit, 
-                lacinia ullamcorper ex consectetur. Fusce ipsum mi, efficitur eu iaculis nec, 
-                iaculis at ipsum. Aenean ultricies ac turpis interdum feugiat.
-              </p>
-            </div>
-            ))}                              
+
+      <div className="flex flex-col flex-1 bg-gray-700">
+        <div className="flex items-center h-12 px-3 shadow-sm">general</div>
+        <div className="flex-1 p-3 space-y-4 overflow-y-scroll">
+          {[...Array(40)].map((_, i) => (
+            <p key={i}>
+              Message {i}. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vel saepe laudantium sed reprehenderit incidunt! Hic rem
+              quos reiciendis, fugit quae ratione beatae veniam laborum
+              voluptatem, iusto dolorum, voluptates suscipit quia.
+            </p>
+          ))}
         </div>
       </div>
     </>
-  )
+  );
 }
