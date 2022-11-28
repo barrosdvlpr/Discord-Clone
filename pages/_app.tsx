@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="flex h-screen text-gray-100">
         <div className="p-3 space-y-2 overflow-y-scroll bg-gray-900">
           <NavLink href="/">
-            <DiscordIcon className="h-5 w-7" />
+            <Discord className="h-5 w-7" />
           </NavLink>
 
           <hr className="border-t-white/[.06] border-t-2 rounded mx-2" />
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp
 
-function DiscordIcon(props: any) {
+function Discord(props: any) {
   return (
     <svg aria-hidden="false" viewBox="0 0 28 20" {...props}>
       <path
