@@ -56,7 +56,7 @@ function DiscordIcon(props: any) {
   );
 }
 
-export function NavLink({href, children}){
+export function NavLink({href, children}: any){
   const router = useRouter()
 
   return(
