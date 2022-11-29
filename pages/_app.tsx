@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
           {servers.map((server) => (
             <NavLink href={`/servers/${server.id}/channels/1`}
-              active={+router.query.sid === +server.id}
+              active={router.query.sid == server.id}
               key={server.id}>
               <img src={`/servers/${server.img}`} alt="" />
             </NavLink>
